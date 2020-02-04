@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main(){
+int u_id = getuid();
+int rg_id = getgid();
+int eu_id = geteuid();
+int eg_id = getegid();
+int p_id = getpid();
+int p_pid = getppid();
+
+printf("Process ID: %d\n", p_id);
+printf("paren Process ID: %d\n", p_pid);
+printf("user ID: %d\n", u_id);
+printf("eu ID: %d\n", eu_id);
+printf("R group ID: %d\n", rg_id);
+printf("E groupID: %d\n", eg_id);
+
+return 0;
+}
